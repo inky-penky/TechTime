@@ -12,7 +12,16 @@ module.exports = {
     extend: {
       colors: {
         'gen-blue': '#004DB3',
-        'nav-blue': '#AAC4E6'
+        'nav-blue': '#AAC4E6',
+        'gen-gray': '#F8F9FC',
+        'gen-ash': '#A1A1A1',
+        'tag-blue': '#1E5DCE33',
+        'star-yellow': '#F6B435',
+        'tagTextBlue': '#1E5DCE'
+      },
+      fontFamily: {
+        'satoshi': ['Satoshi'],
+        'clash': ['ClashDisplay']
       }
     },
   },
