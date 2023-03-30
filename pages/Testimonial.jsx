@@ -3,52 +3,50 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { testimonials } from '../components/testimonial'
+import React, { Component } from "react";
 
 
 
 
 
-
-
-
-const Testimonials = () => {
-
-    let settings = {
+const Testimonials =() => {
+   
+    const settings = {
         dots: true,
-        infinite: false,
-        speed: 500,
+        infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 3,
-        initialSlide: 0,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 1500,
+        cssEase: "linear",
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
           }
-        ]
-      };
-
-    
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
     return (
         <div id="testimonial" className="flex flex-col w-full h-full gap-10 py-14 bg-gen-gray">
             <div className="flex flex-col items-center justify-center text-center">
@@ -59,12 +57,12 @@ const Testimonials = () => {
                 Generally Any Standard Video Image
                 </p>
             </div>
-            <div className="flex gap-5 font-satoshi">
+            <div className=" font-satoshi">
                 <Slider {...settings}>
                     {testimonials.map((item, index) =>(
                         <div className="flex p-5 overflow-hidden bg-white rounded-2xl max-w-max" key={index}>
-                            <div className="text-[1rem] text-gen-ash" >
-                                <p className="w-[40rem]">{item.description}</p>
+                            <div className="text-[.8rem] text-gen-ash" >
+                                <p className=" max-w-max">{item.description}</p>
                             </div>
                             <div className="flex items-center gap-1.5 pt-5">
                                 <div className="">
@@ -82,6 +80,8 @@ const Testimonials = () => {
         </div>
     )
 }
+
+
 
 
 export default Testimonials
