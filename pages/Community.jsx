@@ -15,7 +15,7 @@ const Community = () => {
                 <p className="text-sm font-satoshi">Meet Up With Other Techstars And Grow Together</p>
             </div>
             <div className="">
-                <Image src={Map} />
+                <Image src={Map} alt="map" />
             </div>
             <div className="flex justify-center">
                 <span className="px-8 py-3 text-sm bg-white rounded text-gen-blue font-satoshi">Join Our Community</span>

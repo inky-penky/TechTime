@@ -30,7 +30,7 @@ const About = () => {
                 <div className="grid w-1/2 gap-5 sm:justify-center sm:items-center">
                     <div className="relative flex flex-col items-start justify-start ">
                         <div className="absolute -ml-[3rem] mt-[3.15rem]">
-                            <Image src={Vector} />
+                            <Image src={Vector} alt="vector" />
                         </div>
                         <div className="flex flex-col items-start justify-start gap-2 mt-20">
                             <h1 className="font-bold text-[2.7rem] font-clash">High quality video, audio & live classes</h1>
@@ -44,19 +44,19 @@ const About = () => {
                     </div>
                     <div className="grid grid-cols-2 gap-5 font-satoshi text-[#000F24] text-sm">
                         <div className="flex items-center justify-start gap-4 py-3 pl-4 pr-10 bg-white rounded max-w-max">
-                            <Image src={Speaker} />
+                            <Image src={Speaker} alt="speaker" />
                             <p className="">Audio Classes</p>
                         </div>
                         <div className="flex items-center gap-4 py-3 pl-4 pr-10 bg-white rounded max-w-max ">
-                            <Image src={Network} />
+                            <Image src={Network} alt="network" />
                             <p className="">Live Classes</p>
                         </div>
                         <div className="flex items-center gap-4 py-3 pl-4 pr-10 bg-white rounded max-w-max">
-                            <Image src={Play} />
+                            <Image src={Play} alt="play" />
                             <p className="">Recorded Classes</p>
                         </div>
                         <div className="flex items-center gap-4 py-3 pl-4 pr-10 bg-white rounded max-w-max">
-                            <Image src={Note} />
+                            <Image src={Note} alt="note" />
                             <p className="">50+ Notes</p>
                         </div>
                     </div>
@@ -71,20 +71,20 @@ const About = () => {
                         </div>
                     </div>
                     <div className="absolute w-12 -right-20 top-10">
-                        <Image src={Zigzag} />
+                        <Image src={Zigzag} alt="zigzag" />
                     </div>
                     <div className="relative grid pt-14">
                         <div className="w-[25rem] z-10">
-                            <Image src={Image_1} />
+                            <Image src={Image_1} alt="picture" />
                         </div>
                         <div className="w-[6.5rem] absolute bottom-[5.5rem] -right-[1.15rem]">
-                            <Image src={Bubbles} />
+                            <Image src={Bubbles} alt="bubbles" />
                         </div>
                         <div className="w-[15rem] -mt-[7.5rem] z-20 -ml-[7rem]">
-                            <Image src={Image_2} />
+                            <Image src={Image_2} alt="picture" />
                         </div>
                         <div className="ml-[16rem] w-3">
-                            <Image src={Circle_1} />
+                            <Image src={Circle_1} alt="circle" />
                         </div>
                         
                     </div>
@@ -103,10 +103,10 @@ const About = () => {
                     </div>
                     <div className="flex gap-12 px-[1rem] items-center">
                         <div className="mt-[10rem] w-[1.2rem]">
-                            <Image src={Triangle} />
+                            <Image src={Triangle} alt="triangle" />
                         </div>
                         <div className="w-[40rem]">
-                            <Image src={Image_3} />
+                            <Image src={Image_3} alt="picture" />
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@ const About = () => {
                     <div className="relative grid grid-cols-2 gap-4 rounded h-fit">
                         <div className="w-[16rem] bg-white p-5 grid rounded gap-5">
                             <div className="flex justify-start w-10 ">
-                                <Image src={Frame} />
+                                <Image src={Frame} alt="image" />
                             </div>
                             <div className="flex flex-col gap-2 ">
                                 <h4 className="text-sm font-semibold">Experienced Mentors</h4>
@@ -127,7 +127,7 @@ const About = () => {
                         </div>
                         <div className="w-[16rem] bg-white p-5 grid rounded gap-5">
                             <div className="flex justify-start w-10">
-                                <Image src={Clock} />
+                                <Image src={Clock} alt="clock" />
                             </div>
                             <div className="flex flex-col gap-2">
                                 <h4 className="text-sm font-semibold">One-On-One Meetings</h4>
@@ -140,7 +140,7 @@ const About = () => {
                         </div>
                         <div className="w-[16rem] bg-white p-5 grid rounded gap-5">
                             <div className="flex justify-start w-10">
-                                <Image src={Community} />
+                                <Image src={Community} alt="community" />
                             </div>
                             <div className="flex flex-col gap-2">
                                 <h4 className="text-sm font-semibold">One-On-One Meetings</h4>
@@ -153,7 +153,7 @@ const About = () => {
                         </div>
                         <div className="w-[16rem] bg-white p-5 grid rounded gap-5">
                             <div className="flex justify-start w-10">
-                                <Image src={Dollar} />
+                                <Image src={Dollar} alt="dollar" />
                             </div>
                             <div className="flex flex-col gap-2">
                                 <h4 className="text-sm font-semibold">Affordable Prices</h4>
@@ -165,7 +165,7 @@ const About = () => {
                             </div> 
                         </div>
                         <div className="absolute -bottom-[3rem] -right-[2.5rem] w-[1rem]">
-                            <Image src={Circle_2} />
+                            <Image src={Circle_2} alt="circle" />
                         </div>
                     </div>
                 </div>

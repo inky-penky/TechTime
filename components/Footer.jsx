@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="bg-[#000F24] h-full pt-28 pb-52 px-20 lg:flex justify-between sm:grid">
             <div className="flex flex-col gap-5">
                 <div className="">
-                    <Image src={Logo} width={100} />
+                    <Image src={Logo} width={100} alt="logo" />
                 </div>
                 <div className="text-xs text-white font-satoshi">
                     <p className="">Reach out to us on any of our social media networks</p>
@@ -24,27 +24,27 @@ const Footer = () => {
                 <div className="flex gap-4 ">
                     <Link href="" legacyBehavior>
                         <a className="">
-                            <Image src={Facebook} width={25} />
+                            <Image src={Facebook} width={25} alt="facebook" />
                         </a>
                     </Link>
                     <Link href="" legacyBehavior>
                         <a className="">
-                            <Image src={Twitter} width={25} />
+                            <Image src={Twitter} width={25} alt="twitter" />
                         </a>
                     </Link>
                     <Link href="" legacyBehavior>
                         <a className="">
-                            <Image src={Youtube} width={25} />
+                            <Image src={Youtube} width={25} alt="youtube" />
                         </a>
                     </Link>
                     <Link href="" legacyBehavior>
                         <a className="">
-                            <Image src={Instagram} width={25} />
+                            <Image src={Instagram} width={25} alt="Instagram" />
                         </a>
                     </Link>
                     <Link href="" legacyBehavior>
                         <a className="">
-                            <Image src={Discord} width={25} />
+                            <Image src={Discord} width={25} alt="discord" />
                         </a>
                     </Link>
                 </div>
@@ -54,21 +54,12 @@ const Footer = () => {
                     <h3 className="">UsefulLinks</h3>
                 </div>
                 <div className="flex flex-col gap-1 text-sm font-satoshi">
-                    <Link href="#" legacyBehavior>
-                        <a className="">Home</a>
-                    </Link>
-                    <Link href="#" legacyBehavior>
-                        <a className="">About Us</a>
-                    </Link>
-                    <Link href="#" legacyBehavior>
-                        <a className="">Courses</a>
-                    </Link>
-                    <Link href="#" legacyBehavior>
-                        <a className="">Testimonial</a>
-                    </Link>
-                    <Link href="#" legacyBehavior>
-                        <a className="">Community</a>
-                    </Link>
+                <a href="#home" className="">Home</a>
+                    <a href="#about" className="">About Us</a>
+                    <a href="#courses" className="">Courses</a>
+                    <a href="#testimonial" className="">Testimonial</a>
+                    <a href="#community" className="">Community</a>
+
                 </div>
             </div>
             <div className="flex flex-col gap-3 text-white">

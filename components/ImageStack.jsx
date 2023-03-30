@@ -11,19 +11,19 @@ export default function ImageStack () {
     return (
         <div className="flex pl-[1rem]">
             <div className="w-12 -ml-4">
-                <Image src={Image_1} />
+                <Image src={Image_1} alt="avatar" />
             </div>
             <div className="w-12 -ml-4">
-                <Image src={Image_2} />
+                <Image src={Image_2} alt="avatar" />
             </div>
             <div className="w-12 -ml-4">
-                <Image src={Image_3} />
+                <Image src={Image_3} alt="avatar" />
             </div>
             <div className="w-12 -ml-4">
-                <Image src={Image_4} />
+                <Image src={Image_4} alt="avatar" />
             </div>
             <div className="w-12 -ml-4">
-                <Image src={Image_5} />
+                <Image src={Image_5} alt="avatar" />
             </div>
         </div>
     )

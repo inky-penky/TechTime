@@ -14,11 +14,11 @@ const Hero = () => {
         <div id="home" className="flex lg:justify-between gap-20 pr-[6rem] sm:flex-wrap lg:flex-nowrap sm:justify-center mt-32">
             <div className="w-1/2 pt-[5rem] flex flex-col ">
                 <div className="px-[7rem] flex justify-between">
-                    <Image src={GreenCircle} />
-                    <Image src={YellowDot} />
+                    <Image src={GreenCircle} alt="circle" />
+                    <Image src={YellowDot} alt="dot" />
                 </div>
                 <div className="flex items-end justify-end gap-10 pt-16 text-white">
-                    <Image src={Zigzag} width={50} className="pb-3"/>
+                    <Image src={Zigzag} width={50} className="pb-3" alt="zigzag" />
                     <h1 className="text-[2.8rem] font-semibold font-clash">Grow your skills to advance your career path </h1>
                 </div>
 
@@ -31,14 +31,14 @@ const Hero = () => {
                         <div className="flex gap-5 font-satoshi">
                             <div className="flex items-center justify-center gap-2 px-6 py-3 text-sm text-white bg-transparent border border-white rounded">
                                 <span className="">Get Started Now</span>
-                                <Image src={OutwardArrow} />
+                                <Image src={OutwardArrow} alt="arrow" />
                             </div>
                             <div className="text-sm">
                                 <button className="px-5 py-3 bg-white rounded text-gen-blue">Enroll Now</button>
                             </div>
                         </div>
                         <div className="-mt-10 -mr-28 ">
-                            <Image src={Arrow} width={90} />
+                            <Image src={Arrow} width={90} alt="arrow" />
                         </div>
                     </div>
                     <div className="flex items-center gap-2 ">
@@ -55,7 +55,7 @@ const Hero = () => {
             </div>
 
             <div className="">
-                <Image src={HeroImage} width={650}  />
+                <Image src={HeroImage} width={650} alt="hero_image"  />
             </div>
         </div>
         

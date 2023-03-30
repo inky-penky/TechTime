@@ -31,7 +31,7 @@ const Courses = () => {
                 </p>
             </div>
             <div className="px-[7rem] ">
-                <Image src={Vector} width={30} />
+                <Image src={Vector} width={30} alt="vector" />
             </div>
             <div className="flex items-center justify-center gap-20 text-sm font-satoshi text-gen-ash">
                 {['All Categories', 'Design', 'Marketing', 'Development'].map((item, index) => (

@@ -17,7 +17,7 @@ COPY . .
 EXPOSE 3000
 
 # Start the application using yarn
-CMD ["yarn", "start"]
+CMD ["yarn", "start"] yarn run dev
 
 
 we are using the node:14 base image, setting the working directory to /app, and copying the package.json and yarn.lock files to the container. We then run yarn install to install the dependencies, copy the rest of the application code to the container, expose port 3000, and start the application using yarn start.

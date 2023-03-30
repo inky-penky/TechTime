@@ -10,11 +10,11 @@ import Stripe from "../public/vectors/svg/Stripe.svg"
 const Sponsors = () => {
     return (
         <div className="p-[1.5rem] bg-[#CCDBF0] w-screen flex justify-center gap-12 items-center">
-            <Image src={Zoom} width={95} />
-            <Image src={Stripe} width={80} />
-            <Image src={Monday} width={150} />
-            <Image src={Slack} width={100} />
-            <Image src={Dropbox} width={120} />
+            <Image src={Zoom} width={95} alt="zoom" />
+            <Image src={Stripe} width={80} alt="stripe" />
+            <Image src={Monday} width={150} alt="monday.com" />
+            <Image src={Slack} width={100} alt="slack" />
+            <Image src={Dropbox} width={120} alt="dropbox" />
         </div>
     )
 }

@@ -26,7 +26,7 @@ const Card = ({courses}) => {
                         <div className="flex items-center justify-center">
                             <p>4.7k</p>
                             <div className="-mt-[.15rem]">
-                                <Image src={Star} width={13} height={1} />
+                                <Image src={Star} width={13} height={1} alt="star" />
                             </div>
                         </div>
                         <div className="">
@@ -39,17 +39,17 @@ const Card = ({courses}) => {
                 </div>
                 <div className="flex justify-between font-satoshi text-gen-ash text-[.7rem] pt-2">
                     <div className="flex items-center gap-1.5">
-                        <Image src={Schedule} width={13} height={1} />
+                        <Image src={Schedule} width={13} height={1} alt="schedule" />
                         <p className="">{course.duration}</p>
                     </div>
                     <div className="flex items-center gap-1.5">
-                        <Image src={Book}  width={13} height={1} />
+                        <Image src={Book}  width={13} height={1} alt="book" />
                         <p className="">{course.lessons}</p>
                     </div>
                 </div>
                 <div className="flex justify-between pt-2">
                     <div className="flex font-satoshi gap-1 text-[0.7rem] items-center">
-                        <Image src={course.avatar} width={25} height={1} />
+                        <Image src={course.avatar} width={25} height={1} alt="avatar" />
                         <p className="">{course.name}</p>
                     </div>
                     <div className="">
