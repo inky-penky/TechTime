@@ -35,7 +35,7 @@ const Courses = () => {
             </div>
             <div className="flex items-center justify-center gap-20 text-sm font-satoshi text-gen-ash">
                 {['All Categories', 'Design', 'Marketing', 'Development'].map((item, index) => (
-                    <span onClick={()=>handleFilter(item)} className="p-2 hover:p-2 hover:bg-white hover:rounded">{item}</span>
+                    <span onClick={()=>handleFilter(item)} className="p-2 cursor-pointer hover:p-2 hover:bg-white hover:rounded">{item}</span>
                     
                 ))}
             </div>

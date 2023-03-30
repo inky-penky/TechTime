@@ -1,38 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Use the official Node.js 14 image as the base image
+FROM node:14
 
-## Getting Started
+# Set the working directory to /app
+WORKDIR /app
 
-First, run the development server:
+# Copy the package.json and yarn.lock files to the container
+COPY package.json yarn.lock ./
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+# Install dependencies using yarn
+RUN yarn install
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Copy the rest of the application code to the container
+COPY . .
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Expose port 3000
+EXPOSE 3000
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Start the application using yarn
+CMD ["yarn", "start"]
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+we are using the node:14 base image, setting the working directory to /app, and copying the package.json and yarn.lock files to the container. We then run yarn install to install the dependencies, copy the rest of the application code to the container, expose port 3000, and start the application using yarn start.
 
-## Learn More
+# To build the Docker image using this Dockerfile, run the following command:
+docker build -t myapp .
 
-To learn more about Next.js, take a look at the following resources:
+# To run the Docker container using this image, run the following command:
+docker run -p 3000:3000 myapp
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This will start the Docker container and map port 3000 on the host machine to port 3000 inside the container, allowing you to access the application from a web browser on the host machine.
