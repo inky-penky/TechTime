@@ -2,7 +2,7 @@ import Image from "next/image"
 import Image_1 from '../public/vectors/images/Frame 95.png'
 import Image_2 from '../public/vectors/images/Frame 96.png'
 import Image_3 from '../public/vectors/images/Frame 97.png'
-import Image_4 from '../public/vectors/images/Frame 98.png'
+import Image_4 from '../public/vectors/images/Frame98.png'
 import Image_5 from '../public/vectors/images/Frame 99.png'
 
 

@@ -62,7 +62,7 @@ const Testimonials =() => {
                     {testimonials.map((item, index) =>(
                         <div className="flex p-5 overflow-hidden bg-white rounded-2xl max-w-max" key={index}>
                             <div className="text-[.8rem] text-gen-ash" >
-                                <p className=" max-w-max">{item.description}</p>
+                                <p className="max-w-max">{item.description}</p>
                             </div>
                             <div className="flex items-center gap-1.5 pt-5">
                                 <div className="">
