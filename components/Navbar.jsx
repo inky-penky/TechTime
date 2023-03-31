@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <div className="w-full z-50 h-auto flex justify-between items-center pt-10 pb-5 px-[6rem] fixed bg-gen-blue">
             <div className="">
-                <Image src={Logo} width={100}  />
+                <Image src={Logo} width={100}  alt="logo"/>
             </div>
 
             <div className="flex items-center justify-center gap-8 text-sm font-satoshi">
