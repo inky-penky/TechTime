@@ -1,4 +1,4 @@
-# Use the official Node.js 14 image as the base image
+<!-- # Use the official Node.js 14 image as the base image
 FROM node:14
 
 # Set the working directory to /app
@@ -29,4 +29,4 @@ docker build -t myapp .
 docker run -p 3000:3000 myapp
 
 
-This will start the Docker container and map port 3000 on the host machine to port 3000 inside the container, allowing you to access the application from a web browser on the host machine.
+This will start the Docker container and map port 3000 on the host machine to port 3000 inside the container, allowing you to access the application from a web browser on the host machine. -->
